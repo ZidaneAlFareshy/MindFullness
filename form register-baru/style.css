@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@700&family=Quicksand:wght@700&display=swap');
+
+body {
+    background: #03BBDD;
+    font-family: 'Quicksand';
+}
+
+.form-control {
+    font-size: 14px;
+    transition: all 0s;
+    box-shadow: none;
+    padding: 5px;
+    width: 350px;
+    border-radius: 5px;
+}
+.form-control:focus {
+    border-color: #5cb85c;
+}
+.form-control, .btn {
+    outline: burlywood;
+}
+.signup-form {
+    width: 480px;
+    margin: 0 auto;
+    padding: 15px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup-form form {
+    border-radius: 15px;
+    margin-bottom: 20px;
+    background: #fff;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
+}
+.signup-form a {
+    color: #03BBDD;
+}    
+.signup-form h2 {
+    text-align: center;
+    font-size: 26px;
+    margin: 10px 0 15px;
+}
+.signup-form .hint-text {
+    color: #999;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.signup-form .form-group {
+    margin-bottom: 20px;
+}
+.signup-form .btn {        
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+.signup-btn {
+    text-align: center;
+    border-color: #00CB51;
+    transition: all 0s;
+    background: #00CB51;
+    width: 350px;
+    border-radius: 5px;
+    color: white;
+}
+.button-succes button{
+    color: white;
+}
+.text-center{
+    text-align: center;
+}
