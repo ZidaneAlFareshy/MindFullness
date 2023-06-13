@@ -1,0 +1,32 @@
+@media screen and (max-width: 986px) {
+  .parent-content {
+    flex-wrap: wrap;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .image-content img {
+    height: 400px;
+  }
+
+  .meditasi {
+    padding-top: 60px;
+  }
+}
+
+/* mobile */
+@media (max-width: 450px) {
+  .parent-content {
+    flex-wrap: wrap;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .image-content img {
+    height: 300px;
+  }
+
+  .meditasi {
+    padding-top: 60px;
+  }
+}
