@@ -1,112 +1,204 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mindfulness App - Article Menu</title>
-    <!-- Memuat CSS Bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
-    />
-    <!-- Memuat file CSS tambahan -->
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <h2 class="text-center text-info fw-bold">Article Menu</h2>
-      <img
-        src="./assets/meditasi.png"
-        class="card-img-top1"
-        alt="Gambar Artikel"
-      />
 
-      <div id="article-menu" class="row">
-        <div class="col-md-3">
-          <div class="card">
-            <div class="card-body text-center">
-              <img
-                src="./assets/meditasi.png"
-                class="card-img-top"
-                alt="Gambar Artikel"
-              />
-              <h5 class="card-title">Article Title 1</h5>
-              <p class="card-text">Description of Article 1</p>
-              <div class="d-flex justify-content-center">
-                <a
-                  href="#"
-                  class="btn btn-info custom-btn-width text-white fw-bold"
-                  >Read More</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card">
-            <div class="card-body text-center">
-              <img
-                src="./assets/meditasi.png"
-                class="card-img-top"
-                alt="Gambar Artikel"
-              />
-              <h5 class="card-title">Article Title 2</h5>
-              <p class="card-text">Description of Article 2</p>
-              <div class="d-flex justify-content-center">
-                <a
-                  href="#"
-                  class="btn btn-info custom-btn-width text-white fw-bold"
-                  >Read More</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card">
-            <div class="card-body text-center">
-              <img
-                src="./assets/meditasi.png"
-                class="card-img-top"
-                alt="Gambar Artikel"
-              />
-              <h5 class="card-title">Article Title 3</h5>
-              <p class="card-text">Description of Article 3</p>
-              <div class="d-flex justify-content-center">
-                <a
-                  href="#"
-                  class="btn btn-info custom-btn-width text-white fw-bold"
-                  >Read More</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MindFullness</title>
 
-        <div class="col-md-3">
-          <div class="card">
-            <div class="card-body text-center">
-              <img
-                src="./assets/meditasi.png"
-                class="card-img-top"
-                alt="Gambar Artikel"
-              />
-              <h5 class="card-title">Article Title 3</h5>
-              <p class="card-text">Description of Article 3</p>
-              <div class="d-flex justify-content-center">
-                <a
-                  href="#"
-                  class="btn btn-info custom-btn-width text-white fw-bold"
-                  >Read More</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- CSS -->
+    <link rel="stylesheet" href="artikel.css">
 
-    <!-- Memuat JavaScript Bootstrap dan jQuery -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Google Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- Bootsrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Navbar -->
+
+    <head>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">MindFullness</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Features
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Konseling</a></li>
+                                <li><a class="dropdown-item" href="#">Meditasi</a></li>
+                                <li><a class="dropdown-item" href="#">Tes Kesehatan</a></li>
+                                <li><a class="dropdown-item" href="#">Musik Relax</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Article</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </head>
+    <!-- Akhir Navbar -->
+
+    <main id="main">
+        <!-- Welcome to Article -->
+        <div class="parent-article">
+            <div class="card text-center" style="width: 40rem;">
+                <div class="card-body shadow">
+                    <h5 class="card-title fs-4">Selamat Datang di Artikel</h5>
+                    <p class="card-text fs-6">Dalam platform online atau media cetak yang berfokus pada topik-topik
+                        terkait kesehatan mental. Artikel-artikel ini bertujuan untuk menyediakan informasi, panduan,
+                        dan sumber daya yang relevan untuk memahami, menjaga, dan meningkatkan kesehatan mental
+                        seseorang. </p>
+                </div>
+            </div>
+        </div>
+        <!-- Akhir Welcome to Article -->
+
+        <!-- List Article -->
+        <div class="article">
+            <h1>Artikel Terbaru</h1>
+            <div class="list-article">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://images.unsplash.com/photo-1602192509154-0b900ee1f851?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                        class="card-img-top" alt="meditasi">
+                    <div class="card-body shadow">
+                        <h5 class="card-title">Meditasi</h5>
+                        <p class="card-text">Meditasi terpandu merupakan salah satu teknik mindfulness yang
+                            populer. Selama sesi meditasi terpandu, kita akan...</p>
+                        <a target="_blank"
+                            href="https://lifestyle.kompas.com/read/2021/12/21/150000720/4-teknik-mindfulness-yang-layak-untuk-dicoba?page=all"
+                            class="btn">Read More</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://images.unsplash.com/photo-1431263154979-0982327fccbb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                        class="card-img-top" alt="manifestasi">
+                    <div class="card-body shadow">
+                        <h5 class="card-title">Manifestasi</h5>
+                        <p class="card-text">Merupakan perwujudan suatu pernyataan perasaan atau pendapat;
+                            perwujudan atau bentuk dari sesuatu yang tidak kelihatan...</p>
+                        <a target="_blank"
+                            href="https://mediaindonesia.com/humaniora/553986/arti-kata-manifestasi-dan-contoh-kalimatnya"
+                            class="btn">Read More</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                        class="card-img-top" alt="jurnal">
+                    <div class="card-body shadow">
+                        <h5 class="card-title">Menulis Jurnal</h5>
+                        <p class="card-text">Jurnal adalah bentuk mindfulness yang bisa menghilangkan
+                            kecemasan, membantu kita mengatasi masalah...</p>
+                        <a target="_blank" href="https://greatmind.id/article/bersyukur-lewat-jurnal" class="btn">Read
+                            More</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://images.unsplash.com/photo-1601909977949-94b1582edc47?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                        class="card-img-top" alt="nafas">
+                    <div class="card-body shadow">
+                        <h5 class="card-title">Pernapasan Dalam</h5>
+                        <p class="card-text">Latihan pernapasan dalam adalah cara sederhana, namun berdampak
+                            untuk melepaskan stres, membangun ketahanan yang...</p>
+                        <a target="_blank" href="https://hellosehat.com/pernapasan/menarik-napas-dalam/"
+                            class="btn">Read More</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://images.unsplash.com/photo-1613312328068-c9b6b76c9e8a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                        class="card-img-top" alt="kesehatan mental">
+                    <div class="card-body shadow">
+                        <h5 class="card-title">Pentingnya Kesehatan Mental</h5>
+                        <p class="card-text">Kesehatan mental dipengaruhi oleh peristiwa dalam kehidupan yang
+                            meninggalkan dampak yang besar...</p>
+                        <a target="_blank"
+                            href="https://yankes.kemkes.go.id/view_artikel/362/mengenal-pentingnya-kesehatan-mental-pada-remaja"
+                            class="btn">Read More</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://images.unsplash.com/photo-1516585142943-4341daf22d5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                        class="card-img-top" alt="menjaga">
+                    <div class="card-body shadow">
+                        <h5 class="card-title">Menjaga Kesehatan Mental</h5>
+                        <p class="card-text">Mengapa kesehatan mental perlu dijaga? Karena dasar bagi kemampuan manusia
+                            untuk berpikir, berekspresi, berinteraksi...</p>
+                        <a target="_blank"
+                            href="https://telemed.ihc.id/artikel-detail-373-Bagaimana-Menjaga-Kesehatan-Mental.html"
+                            class="btn">Read More</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80g"
+                        class="card-img-top" alt="fun at work">
+                    <div class="card-body shadow">
+                        <h5 class="card-title">Fun at Work</h5>
+                        <p class="card-text">Menjadi produktif dan bahagia adalah harapan bagi kita, seorang pegawai.
+                            Hal itu juga adalah kondisi yang diharapkan...</p>
+                        <a target="_blank"
+                            href="https://www.kompasiana.com/mustblue/636df6ac41ec7a437f403a42/fun-at-work-seni-meningkatkan-produktivitas-karyawan"
+                            class="btn">Read
+                            More</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://images.unsplash.com/photo-1572610292874-0aeb747aad5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                        class="card-img-top" alt="multitasking">
+                    <div class="card-body shadow">
+                        <h5 class="card-title">Bahaya Multitasking Bagi Kesehatan Otak</h5>
+                        <p class="card-text">Dalam dunia industri kreatif di era digital, orang yang bisa melakukan
+                            banyak hal sekaligus dalam satu...</p>
+                        <a target="_blank"
+                            href="https://www.kompasiana.com/primata/62142aadbb44864da52dc432/bahaya-multitasking-bagi-kesehatan-otak"
+                            class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Akhir List Article -->
+    </main>
+
+    <!-- Footeer -->
+    <footer>
+        <div class="parent-footer">
+            <p>&copy; Copyright, Suported by: MindFullness</p>
+        </div>
+    </footer>
+    <!-- Akhir Footer -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
