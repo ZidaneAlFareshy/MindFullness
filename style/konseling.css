@@ -1,0 +1,129 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  /* height: 400vh; */
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f6fb;
+
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+/* navbar */
+.navbar {
+  background-color: #03bbdd;
+}
+
+.container-fluid .navbar-brand {
+  font-weight: bold;
+}
+
+.container-fluid .navbar-brand:hover {
+  color: white;
+}
+
+.container-fluid a {
+  color: white;
+}
+
+.collapse {
+  justify-content: flex-end;
+}
+
+/* dropdown menu */
+.dropdown-menu a {
+  color: black;
+}
+
+/* content */
+#main {
+  transform: translate(0, 40%);
+}
+
+.parent-content {
+  display: flex;
+  align-items: center;
+  padding-left: 70px;
+  padding-right: 70px;
+  gap: 40px;
+}
+
+button {
+  height: 40px;
+  border: solid 1px #03bbdd;
+  background-color: white;
+  color: #03bbdd;
+}
+
+button.btn-tes {
+  border-radius: 5px;
+}
+
+button.btn-tes:hover {
+  background-color: #03bbdd;
+  color: white;
+  transition: all ease 0.3s;
+}
+
+/* footer */
+footer {
+  transform: translate(0, 800%);
+  height: 50px;
+  background-color: #03bbdd;
+}
+
+footer p {
+  text-align: center;
+  margin-top: 15px;
+  color: white;
+  font-weight: 400;
+}
+
+/* responsive */
+@media screen and (max-width: 986px) {
+  .parent-content {
+    flex-wrap: wrap;
+  }
+
+  .parent-content img {
+    align-self: center;
+  }
+}
+
+/* tablet */
+@media (max-width: 675px) {
+  .parent-content {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .parent-content img {
+    height: 350px;
+    align-self: center;
+  }
+}
+
+/* mobile */
+@media (max-width: 450px) {
+  .parent-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .parent-content img {
+    height: 200px;
+    align-self: center;
+  }
+}
