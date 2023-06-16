@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  /* height: 400vh; */
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f6fb;
+
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+/* navbar */
+.navbar {
+  background-color: #03bbdd;
+}
+
+.container-fluid .navbar-brand {
+  font-weight: bold;
+}
+
+.container-fluid a {
+  color: white;
+}
+
+.collapse {
+  justify-content: flex-end;
+}
+
+/* dropdown menu */
+.dropdown-menu a {
+  color: black;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500;1,700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  /* height: 400vh; */
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f6fb;
+
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+/* navbar */
+.navbar {
+  background-color: #03bbdd;
+}
+
+.container-fluid .navbar-brand {
+  font-weight: bold;
+}
+
+.container-fluid a {
+  color: white;
+}
+
+.collapse {
+  justify-content: flex-end;
+}
+
+/* dropdown menu */
+.dropdown-menu a {
+  color: black;
+}
+
+/* content */
+#main {
+  transform: translate(0, 40%);
+}
+.parent-content {
+  display: flex;
+  align-items: center;
+  padding-left: 70px;
+  padding-right: 70px;
+  gap: 40px;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  border: solid 1px #03bbdd;
+  background-color: white;
+  color: #03bbdd;
+}
+
+button.btn-tes {
+  border-radius: 5px;
+}
+
+button.btn-tes:hover {
+  background-color: #03bbdd;
+  color: white;
+  transition: all ease 0.3s;
+}
+
+/* footer */
+footer {
+  transform: translate(0, 800%);
+  height: 50px;
+  background-color: #03bbdd;
+}
+
+footer p {
+  text-align: center;
+  margin-top: 15px;
+  color: white;
+  font-weight: 400;
+}
