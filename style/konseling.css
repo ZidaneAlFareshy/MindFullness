@@ -129,4 +129,8 @@ footer p {
     height: 200px;
     align-self: center;
   }
+
+  footer {
+    margin-top: 20px;
+  }
 }

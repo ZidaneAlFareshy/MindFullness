@@ -97,6 +97,9 @@ footer {
 
 /* responsive */
 @media screen and (max-width: 986px) {
+  #main {
+    padding-top: 13vh;
+  }
   .parent-content {
     flex-wrap: wrap;
     padding-left: 30px;
