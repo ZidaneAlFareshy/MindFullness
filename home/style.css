@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  /* height: 400vh; */
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f6fb;
+
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+/* navbar */
+.navbar {
+  background-color: #03bbdd;
+}
+
+.container-fluid .navbar-brand {
+  font-weight: bold;
+}
+
+.container-fluid .navbar-brand:hover {
+  color: white;
+}
+
+.container-fluid a {
+  color: white;
+}
+
+.collapse {
+  justify-content: flex-end;
+}
+
+/* dropdown menu */
+.dropdown-menu a {
+  color: black;
+}
+
+/* hero section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("./img/jumbotron.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero .content {
+  color: rgb(215, 215, 215);
+  text-align: center;
+}
+
+.hero .content h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.hero .content p {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+/* Arrow button */
+.content button {
+  transform: translate(0, 30%);
+  background-color: #03bbdd;
+  border: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.material-symbols-outlined {
+  color: white;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+/* Features */
+#features {
+  padding-top: 80px;
+}
+
+#features h1 {
+  font-weight: bold;
+  text-align: center;
+}
+
+.parent-list {
+  display: flex;
+  margin: auto;
+  padding-left: 100px;
+  padding-right: 100px;
+  gap: 50px;
+}
+
+.parent-list img {
+  width: 537px;
+  height: 281px;
+}
+
+.desc {
+  align-self: center;
+}
+
+.konseling,
+.meditasi,
+.musik-relax,
+.tes-kesehatan {
+  padding-top: 80px;
+}
+
+/* footer */
+footer {
+  padding-top: 100px;
+}
+.parent-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #03bbdd;
+  height: auto 70px;
+}
+
+.parent-footer button {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: none;
+  color: white;
+}
+
+.material-symbols-outlined.material-footer {
+  color: #03bbdd;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+footer p {
+  font-weight: 400;
+  color: white;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+/* responsive */
+@media screen and (max-width: 986px) {
+  /* hero section */
+  .hero .content p {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .parent-list {
+    flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .parent-list img {
+    width: 437px;
+    height: 340px;
+  }
+  .parent-list.meditasi,
+  .musik-relax {
+    flex-wrap: wrap-reverse;
+  }
+
+  /* profile */
+  .card-container {
+    padding-top: 30px;
+    margin: 0;
+  }
+  .card-list {
+    padding: 0;
+    margin: 10px;
+  }
+}
+
+/* mobile */
+@media (max-width: 450px) {
+  .parent-list {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .parent-list img {
+    width: 337px;
+    height: 231px;
+  }
+  /* footer */
+  .parent-footer {
+    flex-direction: column;
+    height: auto;
+  }
+  footer p {
+    text-align: center;
+  }
+}
